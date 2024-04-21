@@ -11,6 +11,7 @@
 		8792CCBA2BD4CB0A001D3C71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792CCB92BD4CB0A001D3C71 /* ContentView.swift */; };
 		8792CCBC2BD4CB0C001D3C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8792CCBB2BD4CB0C001D3C71 /* Assets.xcassets */; };
 		8792CCC02BD4CB0C001D3C71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8792CCBF2BD4CB0C001D3C71 /* Preview Assets.xcassets */; };
+		8792CCC72BD4CB43001D3C71 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792CCC62BD4CB42001D3C71 /* TimerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		8792CCBB2BD4CB0C001D3C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8792CCBD2BD4CB0C001D3C71 /* TwentyTwentyTwenty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwentyTwentyTwenty.entitlements; sourceTree = "<group>"; };
 		8792CCBF2BD4CB0C001D3C71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8792CCC62BD4CB42001D3C71 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				8792CCBB2BD4CB0C001D3C71 /* Assets.xcassets */,
 				8792CCBD2BD4CB0C001D3C71 /* TwentyTwentyTwenty.entitlements */,
 				8792CCBE2BD4CB0C001D3C71 /* Preview Content */,
+				8792CCC62BD4CB42001D3C71 /* TimerManager.swift */,
 			);
 			path = TwentyTwentyTwenty;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8792CCC72BD4CB43001D3C71 /* TimerManager.swift in Sources */,
 				8792CCBA2BD4CB0A001D3C71 /* ContentView.swift in Sources */,
 				8792CCB82BD4CB0A001D3C71 /* TwentyTwentyTwentyApp.swift in Sources */,
 			);
@@ -266,7 +270,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = TwentyTwentyTwenty/TwentyTwentyTwenty.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TwentyTwentyTwenty/Preview Content\"";
@@ -293,9 +299,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +311,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = TwentyTwentyTwenty/TwentyTwentyTwenty.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TwentyTwentyTwenty/Preview Content\"";
@@ -331,9 +340,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
